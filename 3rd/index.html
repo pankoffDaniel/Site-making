@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Site</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+	<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="clearfix">
+				<div id="logo">
+					<a href="index.html"><img src="img/logo.png" alt="logo"></a>
+				</div>
+				<nav>
+					<ul>
+						<li><a href="index.html" id="underline">Home</a></li>
+						<li><a href="#">Services</a></li>
+						<li><a href="#">Portfolio</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div id="titles">
+				<span>Welcome To Our Studio!</span>
+				<h1>It’s nice to Meet you</h1>
+			</div>
+			<a href="#" id="button">Tell me more</a>
+		</div>
+	</header>
+	<section>
+		<div class="container">
+			<div class="title">
+				<h2>Services</h2>
+				<p>Proin iaculis purus consequat sem cure.</p>
+			</div>
+			<div class="items" id="services">
+				<div>
+					<img src="./img/icon1.png" alt="icon1">
+					<h3>E-Commerce</h3>
+					<p>Proin iaculis purus consequat sem cure 
+					digni ssim. Donec porttitora entum suscipit 
+					aenean rhoncus posuere odio in tincidunt.</p>
+				</div>
+				<div>
+					<img src="./img/icon2.png" alt="icon2">
+					<h3>Responsive Web</h3>
+					<p>Proin iaculis purus consequat sem cure 
+					digni ssim. Donec porttitora entum suscipit 
+					aenean rhoncus posuere odio in tincidunt.</p>
+				</div>
+				<div>
+					<img src="./img/icon3.png" alt="icon3">
+					<h3>Web Security</h3>
+					<p>Proin iaculis purus consequat sem cure 
+					digni ssim. Donec porttitora entum suscipit 
+					aenean rhoncus posuere odio in tincidunt.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="container">
+			<div class="title">
+				<h2>Our portfolio</h2>
+				<p>Proin iaculis purus consequat sem cure.</p>
+			</div>
+			<!-- Legacy form images -->
+				<!-- <div class="items" id="portfolio">
+					<a href="#"><img src="img/img1.jpg" alt="img1"></a>
+					<a href="#"><img src="img/img2.jpg" alt="img2"></a>
+					<a href="#"><img src="img/img3.jpg" alt="img3"></a>
+				</div> -->
+			<div class="swiper-container">
+	    		<div class="swiper-wrapper">
+	        		<div class="swiper-slide">
+	        			<a href="#"><img src="img/img1.jpg" alt="img1"></a>
+	        		</div>
+	        		<div class="swiper-slide">
+	        			<a href="#"><img src="img/img2.jpg" alt="img2"></a>
+	       			</div>
+	       			<div class="swiper-slide">
+	        			<a href="#"><img src="img/img3.jpg" alt="img3"></a>
+	      			</div>
+	    		</div>
+	    		<div class="swiper-pagination"></div>
+	    		<div class="swiper-button-prev"></div>
+	    		<div class="swiper-button-next"></div>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="container">
+			<div class="title">
+				<h2>About us</h2>
+				<p>Proin iaculis purus consequat sem cure.</p>
+			</div>
+			<div id="image-description">
+				<div class="r1 c1">
+					<h3>
+						<span class="date">July 2010</span><br/>
+						<span class="event">Our Humble Beginnings</span>
+					</h3>
+					<p>
+						<span>Proin iaculis purus consequat sem cure</span>
+						<span>digni ssim. Donec porttitora entum suscipit</span>
+						<span>aenean rhoncus posuere odio in tincidunt. Proin</span>
+						<span>iaculis purus consequat sem cure digni</span>
+						<span>ssim. Donec porttitora entum suscipit.</span>
+					</p>
+				</div>
+				<div>	
+					<img src="img/about1.jpg" alt="about1" class="i1">
+				</div>
+				<div class="r2 c3">
+					<h3>
+						<span class="date">January 2011</span><br/>
+						<span class="event">Facing Startup Battles</span>
+					</h3>
+					<p>
+						<span>Proin iaculis purus consequat sem cure</span>
+						<span>digni ssim. Donec porttitora entum suscipit</span>
+						<span>aenean rhoncus posuere odio in tincidunt. Proin</span>
+						<span>iaculis purus consequat sem cure digni</span>
+						<span>ssim. Donec porttitora entum suscipit aenean</span>
+						<span>rhoncus posuere odio in tincidunt.</span>
+					</p>
+				</div>
+				<div>
+					<img src="img/about2.jpg" alt="about2" class="i2">
+				</div>
+				<div class="r3 c1">
+					<h3>
+						<span class="date">December 2012</span><br/>
+						<span class="event">Enter The Dark Days</span>
+					</h3>
+					<p>
+						<span>Proin iaculis purus consequat sem cure</span>
+						<span>digni ssim. Donec porttitora entum suscipit</span>
+						<span>aenean rhoncus posuere odio in tincidunt. Proin</span>
+						<span>iaculis purus consequat sem cure digni</span>
+					</p>
+				</div>
+				<div>
+					<img src="img/about3.jpg" alt="about3" class="i1">
+				</div>
+				<div class="r4 c3">
+					<h3>
+						<span class="date">February 2014</span><br/>
+						<span class="event">Our Triumph</span>
+					</h3>
+				<p>
+						<span>Proin iaculis purus consequat sem cure</span>
+						<span>digni ssim. Donec porttitora entum suscipit</span>
+						<span>aenean rhoncus posuere odio in tincidunt. Proin</span>
+						<span>iaculis purus consequat sem cure digni</span>
+						<span>ssim. Donec porttitora entum suscipit aenean</span>
+				</p>
+				</div>
+				<div>
+					<img src="img/about4.jpg" alt="about4" class="i2">
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="container">
+			<h4>Copyright &copy; Pankoff</h4>
+		</div>
+	</footer>
+
+	
+
+	<script src="https://unpkg.com/swiper/js/swiper.js"></script>
+	<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+	<script>
+	 	var mySwiper = new Swiper ('.swiper-container', {
+		    direction: 'horizontal',
+		    loop: true,
+
+		    pagination: {
+		      el: '.swiper-pagination',
+		    },
+
+		    navigation: {
+		      nextEl: '.swiper-button-next',
+		      prevEl: '.swiper-button-prev',
+		    },
+	  	})
+	  	var mySwiper = new Swiper('.swiper-container', {
+  			autoplay: {
+    			delay: 5000,
+  			},
+		});
+	</script>
+</body>
+</html>
