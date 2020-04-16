@@ -1,0 +1,190 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.header {
+	background-color: purple;
+	/*height: 80px;*/
+	/*height: 65px;*/
+	padding: 15px 0;
+}
+
+.wrapper {
+	width: 80%;
+	max-width: 970px;
+	margin: 0 auto;
+}
+
+.container {
+	padding: 0 5px;
+}
+
+
+.navigation {
+	display: flex;
+	justify-content: space-between;
+}
+
+.logo {
+	background-color: yellow;
+	width: 50px;
+	height: 50px;
+	border-radius: 100%;
+}
+
+.navigation ul {
+	display: flex;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	padding-top: 15px;
+}
+
+.navigation ul li {
+	width: 100px;
+	height: 20px;
+	background-color: yellow;
+	margin-right: 10px;
+}
+
+.navigation ul li:last-child {
+	margin-right: 0;
+}
+
+
+
+.page {
+	padding-top: 30px;
+	padding-bottom: 50px;
+}
+
+.three-blocks {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 30px;
+}
+
+.image {
+	width: 100%;
+	background-color: yellow;
+	padding-bottom: 58%;
+	margin-bottom: 10px;
+}
+
+.block {
+	background-color: green;
+	width: 29%;
+	max-width: 288px;
+	padding: 10px;
+}
+
+.block p {
+	padding: 0;
+	margin: 0;
+	color: white;
+}
+
+
+.two-blocks .image {
+	padding-bottom: 78%;
+}
+
+.two-blocks .block {
+	width: 46%;
+    max-width: 450px;
+}
+
+.two-blocks .block:last-child {
+	margin-bottom: 0;
+}
+
+
+.footer {
+	background-color: purple;
+	padding: 15px 0;
+}
+.footer .navigation {
+	display: inherit;
+}
+.footer .navigation ul {
+	padding-top: 0;
+}
+.footer ul {
+	justify-content: space-between;
+}
+
+@media (max-width: 992px) {
+	.navigation {
+		flex-direction: column;
+		align-items: center;
+	}
+	.navigation ul {
+		flex-direction: column;
+		padding-top: 15px;
+	}
+
+	.navigation ul li {
+		flex-direction: column;
+		width: 300px;
+		height: 50px;
+		margin-right: 0;
+		margin-bottom: 15px;
+	}
+
+
+	.footer .navigation ul {
+		display: flex;
+		flex-direction: row;
+	}
+	.footer .navigation ul li {
+		width: 30%;
+		margin-bottom: 0;
+	}
+}
+
+
+@media (max-width: 800px) {
+	.navigation ul {
+		display: none;
+	}
+	.wrapper {
+		width: 100%;
+		max-width: inherit;
+	}
+	.three-blocks {
+	    padding-bottom: 0;
+	}
+	.two-blocks, .three-blocks {
+		flex-direction: column;
+		align-items: center;
+	}
+	.block {
+		width: 90%;
+		max-width: inherit;
+		margin-bottom: 20px;
+	}
+	.two-blocks .block {
+    	width: 90%;
+    	max-width: inherit;
+	}
+	.two-blocks .image {
+		padding-bottom: 58%;
+	}
+	.footer .navigation ul {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.footer .navigation ul li:nth-child(odd){
+		display: none;
+	}
+
+	.footer .navigation ul li {
+		width: 93%;
+		height: 40px;
+	}
+}
